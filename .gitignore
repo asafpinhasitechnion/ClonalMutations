@@ -46,3 +46,6 @@ __pycache__/
 
 # ── Local tool settings ──
 .claude/settings.local.json
+
+# transient debug logs
+envs/fix_*.log
