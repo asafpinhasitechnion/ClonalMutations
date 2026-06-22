@@ -1,3 +1,4 @@
 [submodule "external/SComatic"]
 	path = external/SComatic
 	url = https://github.com/cortes-ciriano-lab/SComatic.git
+	ignore = untracked
