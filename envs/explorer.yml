@@ -1,0 +1,18 @@
+# Environment for the explorer (reactive UI over the Parquet data layer).
+# Reads ONLY Parquet via DuckDB — no pysam — so it is free to use modern python
+# (kept fully separate from the py3.7 `clonemut` extraction env).
+#   mamba env create -f envs/explorer.yml
+#   conda run -n explorer marimo edit src/clonemut/explorer/explorer_v1.py
+name: explorer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - marimo          # reactive notebook-app UI
+  - duckdb          # query Parquet directly
+  - python-duckdb
+  - polars
+  - pandas          # altair input
+  - pyarrow
+  - altair          # charts
+  - vl-convert-python   # static chart export / larger-data rendering
