@@ -1,0 +1,39 @@
+
+Pinned packages:
+
+  - python=3.10
+
+
+Transaction
+
+  Prefix: /home/asafpinhasi/miniforge3/envs/clonemut
+
+  Updating specs:
+
+   - numpy<2
+
+
+  Package  Version  Build            Channel           Size
+─────────────────────────────────────────────────────────────
+  Downgrade:
+─────────────────────────────────────────────────────────────
+
+  - numpy    2.2.6  py310hefbff90_0  conda-forge     Cached
+  + numpy   1.26.4  py310hb13e2d6_0  conda-forge        7MB
+
+  Summary:
+
+  Downgrade: 1 packages
+
+  Total download: 7MB
+
+─────────────────────────────────────────────────────────────
+
+
+
+Transaction starting
+Unlinking numpy-2.2.6-py310hefbff90_0
+Linking numpy-1.26.4-py310hb13e2d6_0
+
+Transaction finished
+

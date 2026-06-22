@@ -1,0 +1,85 @@
+sample_ID	Chr	Pos	Ref	Mutation called in WES	Depth of coverage in the tumour DNA data	Depth of coverage in the matched-normal DNA data	SComatic	SComatic filter	SComatic.cell_types	ACt.SComatic	ACn.SComatic	CCF.SComatic_scRNAseq	Stat.SComatic	Func.refGene	Gene.refGene
+P9_cSCC	chr1	26472612	C	T	180	59	T	PASS	Epithelial	49	0	0.2295082	scRNA-seq & WES	UTR5	HMGN2
+P9_cSCC	chr1	39571241	G	A	96	37	A	PASS	Epithelial	18	0	0.31818180000000001	scRNA-seq & WES	exonic	PABPC4
+P9_cSCC	chr1	39571242	G	A	99	36	A	PASS	Epithelial	18	0	0.28000000000000003	scRNA-seq & WES	exonic	PABPC4
+P9_cSCC	chr1	70244769	C	T	163	85	T	PASS	Epithelial	31	0	0.1754386	scRNA-seq & WES	exonic	SRSF11
+P9_cSCC	chr1	151267261	C	T	320	185	T	PASS	Epithelial	69	0	0.2026432	scRNA-seq & WES	exonic	PSMD4
+P9_cSCC	chr1	184619556	G	A	203	94	A	PASS	Epithelial	41	0	0.12643679999999999	scRNA-seq & WES	exonic	C1orf21
+P9_cSCC	chr11	14469460	G	A	236	135	NA	LC_Downstream	Epithelial	0	0	0	WES-specific	exonic	COPB1
+P9_cSCC	chr11	35190028	C	T	199	105	NA	.	.	0	0	0	WES-specific	exonic	CD44
+P9_cSCC	chr11	64270066	G	A	292	157	NA	Clustered,PoN	Epithelial	0	0	0	WES-specific	UTR3	BAD
+P9_cSCC	chr11	64270067	G	A	293	160	NA	Clustered,PoN	Epithelial	0	0	0	WES-specific	UTR3	BAD
+P9_cSCC	chr11	66058116	G	A	152	59	A	PASS	Epithelial	30	0	0.1775148	scRNA-seq & WES	exonic	SF3B2
+P9_cSCC	chr11	66058117	G	A	150	60	A	PASS	Epithelial	28	0	0.18787880000000001	scRNA-seq & WES	exonic	SF3B2
+P9_cSCC	chr11	69651241	C	NA	127	46	T	PASS	Epithelial	0	0	4.8611109999999999E-2	scRNA-seq-specific	exonic	CCND1
+P9_cSCC	chr11	85628627	A	T	142	97	NA	.	.	0	0	0	WES-specific	NA	NA
+P9_cSCC	chr12	21637099	C	T	115	54	T	PASS	Epithelial	17	0	0.26666669999999998	scRNA-seq & WES	exonic	LDHB
+P9_cSCC	chr12	21642000	G	T	117	68	NA	Cell_type_noise	Epithelial	0	0	0	WES-specific	exonic	LDHB
+P9_cSCC	chr12	43748586	G	A	89	49	NA	LC_Downstream	Epithelial	0	0	0	WES-specific	exonic	PUS7L
+P9_cSCC	chr12	52514957	C	T	116	75	NA	Multiple_cell_types	Multiplet,Epithelial,Mac	0	0	0	WES-specific	exonic	KRT5
+P9_cSCC	chr12	92144261	G	A	236	106	A	PASS	Epithelial	47	0	0.12345680000000001	scRNA-seq & WES	exonic	BTG1
+P9_cSCC	chr12	122515202	G	A	89	49	NA	Cell_type_noise,LC_Downstream	Epithelial	0	0	0	WES-specific	exonic	RSRC2
+P9_cSCC	chr12	130875903	C	T	59	37	T	PASS	Epithelial	12	0	0.2	scRNA-seq & WES	exonic	RAN
+P9_cSCC	chr12	130875904	C	T	56	37	T	PASS	Epithelial	11	0	0.2133333	scRNA-seq & WES	exonic	RAN
+P9_cSCC	chr13	95786005	A	T	126	49	T	PASS	Epithelial	28	0	0.40909089999999998	scRNA-seq & WES	exonic	DNAJC3
+P9_cSCC	chr14	24290889	C	T	131	66	NA	.	.	0	0	0	WES-specific	exonic	DHRS1
+P9_cSCC	chr14	35310802	G	A	63	30	A	PASS	Epithelial	17	0	0.27272730000000001	scRNA-seq & WES	exonic	PSMA6
+P9_cSCC	chr14	70342712	A	G	68	42	G	PASS	Epithelial	16	0	0.1162791	scRNA-seq & WES	exonic	COX16;SYNJ2BP-COX16
+P9_cSCC	chr15	40767960	G	A	350	134	NA	.	.	0	0	0	WES-specific	exonic	DNAJC17
+P9_cSCC	chr15	43793875	C	T	396	194	NA	Cell_type_noise,Clustered	Multiplet,Epithelial	0	0	0	WES-specific	exonic	SERF2
+P9_cSCC	chr15	43793876	C	T	392	192	NA	Clustered	Epithelial	0	0	0	WES-specific	exonic	SERF2
+P9_cSCC	chr15	78270588	G	NA	170	89	A	PASS	Epithelial	1	0	7.1428569999999997E-2	scRNA-seq with read support in WES	exonic	DNAJA4
+P9_cSCC	chr15	82989923	G	A	114	52	A	PASS	Epithelial	23	0	0.2142857	scRNA-seq & WES	exonic	FAM103A1
+P9_cSCC	chr15	82989924	G	A	115	54	A	PASS	Epithelial	23	0	0.19512199999999999	scRNA-seq & WES	exonic	FAM103A1
+P9_cSCC	chr15	92927304	C	T	240	92	T	PASS	Epithelial	47	0	0.20634920000000001	scRNA-seq & WES	exonic	CHD2
+P9_cSCC	chr16	1809795	G	A	386	157	A	PASS	Epithelial	98	0	0.1666667	scRNA-seq & WES	exonic	HAGH
+P9_cSCC	chr16	1809796	G	A	386	157	A	PASS	Epithelial	98	0	0.15384619999999999	scRNA-seq & WES	exonic	HAGH
+P9_cSCC	chr16	2973411	C	T	143	56	T	PASS	Epithelial	36	0	0.1875	scRNA-seq & WES	UTR3	PAQR4
+P9_cSCC	chr16	30656134	C	T	516	184	NA	.	.	0	0	0	WES-specific	NA	NA
+P9_cSCC	chr16	30656135	C	T	522	185	NA	.	.	0	0	0	WES-specific	NA	NA
+P9_cSCC	chr16	46681418	G	A	107	50	A	PASS	Epithelial	19	0	0.1875	scRNA-seq & WES	exonic	VPS35
+P9_cSCC	chr17	7949473	C	T	254	166	T	PASS	Epithelial	59	0	0.44444440000000002	scRNA-seq & WES	exonic	CNTROB
+P9_cSCC	chr17	44400276	C	T	202	119	NA	Clustered	Epithelial	0	0	0	WES-specific	exonic	GPATCH8
+P9_cSCC	chr17	44400277	C	T	201	123	NA	LC_Downstream,Clustered,PoN	Epithelial	0	0	0	WES-specific	exonic	GPATCH8
+P9_cSCC	chr17	64502522	C	T	55	28	NA	.	.	0	0	0	WES-specific	NA	NA
+P9_cSCC	chr17	64503276	C	T	135	48	T	PASS	Epithelial	30	0	0.1147541	scRNA-seq & WES	exonic	DDX5
+P9_cSCC	chr17	82058113	C	T	74	45	T	PASS	Epithelial	14	0	0.15671640000000001	scRNA-seq & WES	UTR3	DUS1L
+P9_cSCC	chr18	9513163	G	A	110	62	A	PASS	Epithelial	20	0	6.7307690000000003E-2	scRNA-seq & WES	exonic	RALBP1
+P9_cSCC	chr18	59149608	C	T	113	57	NA	Cell_type_noise,Noisy_site,PoN	Epithelial	0	0	0	WES-specific	exonic	SEC11C
+P9_cSCC	chr19	12952801	C	T	120	39	NA	PoN	Epithelial	0	0	0	WES-specific	exonic	RAD23A
+P9_cSCC	chr19	15380325	C	T	87	46	T	PASS	Epithelial	26	0	0.2	scRNA-seq & WES	exonic	AKAP8L
+P9_cSCC	chr19	17521035	C	T	292	97	NA	Noisy_site	Epithelial	0	0	0	WES-specific	exonic	PGLS
+P9_cSCC	chr19	45523846	G	A	170	77	A	PASS	Epithelial	28	0	0.3333333	scRNA-seq & WES	exonic	VASP
+P9_cSCC	chr19	48638959	C	T	148	48	NA	.	.	0	0	0	WES-specific	NA	NA
+P9_cSCC	chr19	49470426	G	A	113	62	NA	.	.	0	0	0	WES-specific	exonic	ALDH16A1
+P9_cSCC	chr2	53787310	C	T	677	327	NA	Cell_type_noise	Epithelial	0	0	0	WES-specific	exonic	ERLEC1
+P9_cSCC	chr2	152659008	C	T	77	44	T	PASS	Epithelial	13	0	0.10344830000000001	scRNA-seq & WES	exonic	PRPF40A
+P9_cSCC	chr21	29066766	G	A	197	62	NA	LC_Downstream	Epithelial	0	0	0	WES-specific	exonic	CCT8
+P9_cSCC	chr21	42909023	G	A	99	80	A	PASS	Epithelial	21	0	0.234375	scRNA-seq & WES	UTR3	NDUFV3
+P9_cSCC	chr22	26492199	G	A	363	165	A	PASS	Epithelial	169	0	0.18518519999999999	scRNA-seq & WES	exonic	TFIP11
+P9_cSCC	chr22	35265096	C	T	239	122	T	PASS	Epithelial	109	0	0.2631579	scRNA-seq & WES	exonic	HMGXB4
+P9_cSCC	chr22	40964104	G	NA	102	57	A	PASS	Epithelial	0	0	7.1794869999999997E-2	scRNA-seq-specific	exonic	RBX1
+P9_cSCC	chr3	5178663	G	A	146	69	A	PASS	Epithelial	16	0	0.2843137	scRNA-seq & WES	splicing	ARL8B
+P9_cSCC	chr3	196502872	C	NA	127	74	A	PASS	Epithelial	0	0	0.23076920000000001	scRNA-seq-specific	splicing	RNF168
+P9_cSCC	chr3	196733792	G	A	101	53	A	PASS	Epithelial	17	0	8.5106379999999995E-2	scRNA-seq & WES	exonic	PIGX
+P9_cSCC	chr3	196733793	G	A	100	54	NA	.	.	0	0	0	WES-specific	exonic	PIGX
+P9_cSCC	chr4	38688794	G	A	715	304	A	PASS	Epithelial	146	0	0.26923079999999999	scRNA-seq & WES	exonic	KLF3
+P9_cSCC	chr4	76006244	G	A	159	121	A	PASS	Epithelial	41	0	0.36363640000000003	scRNA-seq & WES	exonic	CXCL9
+P9_cSCC	chr4	121814022	A	G	78	54	NA	Clustered	Epithelial	0	0	0	WES-specific	exonic	EXOSC9
+P9_cSCC	chr4	121814023	G	A	74	53	NA	Clustered	Epithelial	0	0	0	WES-specific	exonic	EXOSC9
+P9_cSCC	chr5	37396402	G	A	200	89	A	PASS	Epithelial	46	0	0.18181820000000001	scRNA-seq & WES	exonic	WDR70
+P9_cSCC	chr5	77433245	C	A	147	74	NA	.	.	0	0	0	WES-specific	exonic	WDR41
+P9_cSCC	chr6	4032011	C	T	88	57	T	PASS	Epithelial	21	0	0.14285709999999999	scRNA-seq & WES	exonic	PRPF4B
+P9_cSCC	chr6	26234756	G	NA	231	99	A	PASS	Epithelial	12	0	0.1875	scRNA-seq with read support in WES	exonic	HIST1H1D
+P9_cSCC	chr6	31777636	C	T	200	80	NA	Cell_type_noise,Clustered	Multiplet,Epithelial	0	0	0	WES-specific	exonic	VARS
+P9_cSCC	chr6	31777637	C	T	205	81	NA	Cell_type_noise,Clustered	Multiplet,Epithelial	0	0	0	WES-specific	exonic	VARS
+P9_cSCC	chr6	31969523	C	T	856	373	NA	.	.	0	0	0	WES-specific	exonic	SKIV2L
+P9_cSCC	chr6	36596928	C	T	229	137	T	PASS	Epithelial	37	0	0.3333333	scRNA-seq & WES	exonic	SRSF3
+P9_cSCC	chr6	36596929	C	T	226	134	T	PASS	Epithelial	38	0	0.3333333	scRNA-seq & WES	exonic	SRSF3
+P9_cSCC	chr6	116593103	G	NA	105	64	A	PASS	Epithelial	0	0	4.6357620000000002E-2	scRNA-seq-specific	UTR3	RWDD1
+P9_cSCC	chr7	100033331	G	A	95	36	NA	Cell_type_noise	Epithelial	0	0	0	WES-specific	exonic	ZKSCAN1
+P9_cSCC	chr7	139407267	A	G	153	75	G	PASS	Epithelial	41	0	0.28260869999999999	scRNA-seq & WES	exonic	C7orf55-LUC7L2;LUC7L2
+P9_cSCC	chr8	19823420	C	T	107	54	T	PASS	Epithelial	25	0	0.1153846	scRNA-seq & WES	exonic	INTS10
+P9_cSCC	chr9	70278622	C	T	95	35	NA	.	.	0	0	0	WES-specific	exonic	SMC5
+P9_cSCC	chr9	77205334	C	T	208	62	NA	.	.	0	0	0	WES-specific	exonic	VPS13A
+P9_cSCC	chr9	87731058	G	A	100	61	A	PASS	Epithelial	29	0	0.30645159999999999	scRNA-seq & WES	exonic	CTSL

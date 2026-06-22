@@ -1,0 +1,20 @@
+# Environment for ClonalMutations' extraction code (pysam-based).
+# Separate from `align` (STAR/samtools) and the explorer env (marimo/duckdb).
+#   mamba env create -f envs/clonemut.yml
+#
+# Pinned to python 3.7 + pysam 0.21.0 ON PURPOSE: every py3.10 pysam conda build
+# (0.21 / 0.22 / 0.23 / 0.24) segfaults / corrupts the heap during pileup iteration
+# on this WSL2 host because it bundles its own htslib. The py3.7 build links the
+# external htslib 1.17 and is rock-solid (verified: 2.38M pileup columns, no crash).
+# The explorer reads only Parquet, so its modern stack lives in its own env.
+name: clonemut
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.7
+  - pysam=0.21.0
+  - htslib=1.17
+  - numpy
+  - pyarrow        # Parquet writer for the Tier-A/Tier-B data layer
+  - pytest

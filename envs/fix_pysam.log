@@ -1,0 +1,295 @@
+conda-forge/linux-64                                        Using cache
+conda-forge/noarch                                          Using cache
+bioconda/linux-64                                           Using cache
+bioconda/noarch                                             Using cache
+
+Pinned packages:
+
+  - python=3.10
+
+
+Transaction
+
+  Prefix: /home/asafpinhasi/miniforge3/envs/clonemut
+
+  Updating specs:
+
+   - pysam=0.21.0
+   - numpy<2
+
+
+  Package                                Version  Build                 Channel           Size
+────────────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  + liblzma-devel                          5.8.3  hb03c661_0            conda-forge      491kB
+  + xz                                     5.8.3  ha02ee65_0            conda-forge       24kB
+  + xz-gpl-tools                           5.8.3  ha02ee65_0            conda-forge       34kB
+  + xz-tools                               5.8.3  hb03c661_0            conda-forge       96kB
+
+  Remove:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  - libarrow-compute                      24.0.0  h53684a4_7_cpu        conda-forge     Cached
+  - libxml2-16                            2.15.3  hca6bf5a_0            conda-forge     Cached
+
+  Change:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  - ld_impl_linux-64                      2.45.1  default_hbd61a6d_102  conda-forge     Cached
+  + ld_impl_linux-64                      2.45.1  bootstrap_ha15bf96_2  conda-forge     Cached
+  - tk                                    8.6.13  noxft_h366c992_103    conda-forge     Cached
+  + tk                                    8.6.13  noxft_h4845f30_101    conda-forge     Cached
+
+  Downgrade:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  - aws-c-auth                            0.10.3  hd2277e8_3            conda-forge     Cached
+  + aws-c-auth                            0.7.22  h96bc93b_2            conda-forge      106kB
+  - aws-c-cal                             0.9.14  h78948cc_2            conda-forge     Cached
+  + aws-c-cal                             0.6.14  h88a6e22_1            conda-forge       47kB
+  - aws-c-common                          0.14.0  hb03c661_0            conda-forge     Cached
+  + aws-c-common                          0.9.19  h4ab18f5_0            conda-forge      226kB
+  - aws-c-compression                      0.3.2  haa0cbde_2            conda-forge     Cached
+  + aws-c-compression                     0.2.18  h83b837d_6            conda-forge       19kB
+  - aws-c-event-stream                     0.7.1  h9cf6be0_2            conda-forge     Cached
+  + aws-c-event-stream                     0.4.2  ha47c788_12           conda-forge       54kB
+  - aws-c-http                            0.11.0  h6488f85_2            conda-forge     Cached
+  + aws-c-http                             0.8.1  h29d6fba_17           conda-forge      195kB
+  - aws-c-io                              0.26.3  h3bf836e_5            conda-forge     Cached
+  + aws-c-io                              0.14.8  h21d4f22_5            conda-forge      158kB
+  - aws-c-mqtt                            0.16.0  h0d2f46f_0            conda-forge     Cached
+  + aws-c-mqtt                            0.10.4  h759edc4_4            conda-forge      164kB
+  - aws-c-s3                              0.12.6  hb916526_0            conda-forge     Cached
+  + aws-c-s3                               0.5.9  h594631b_3            conda-forge      110kB
+  - aws-c-sdkutils                         0.2.5  haa0cbde_0            conda-forge     Cached
+  + aws-c-sdkutils                        0.1.16  h83b837d_2            conda-forge       55kB
+  - aws-checksums                         0.2.10  haa0cbde_2            conda-forge     Cached
+  + aws-checksums                         0.1.18  h83b837d_6            conda-forge       50kB
+  - aws-crt-cpp                           0.40.1  h7a9a9d6_1            conda-forge     Cached
+  + aws-crt-cpp                           0.26.9  he3a8b3b_0            conda-forge      340kB
+  - aws-sdk-cpp                         1.11.747  hf4c7647_7            conda-forge     Cached
+  + aws-sdk-cpp                         1.11.329  hba8bd5f_3            conda-forge        4MB
+  - azure-core-cpp                        1.16.3  h206d751_0            conda-forge     Cached
+  + azure-core-cpp                        1.13.0  h935415a_0            conda-forge      338kB
+  - azure-identity-cpp                    1.13.3  h71f81a8_2            conda-forge     Cached
+  + azure-identity-cpp                     1.9.0  hd126650_0            conda-forge      213kB
+  - azure-storage-blobs-cpp              12.18.0  h74b55db_1            conda-forge     Cached
+  + azure-storage-blobs-cpp              12.13.0  h1d30c4a_0            conda-forge      551kB
+  - azure-storage-common-cpp             12.14.0  hf596fc9_1            conda-forge     Cached
+  + azure-storage-common-cpp              12.8.0  ha3822c6_0            conda-forge      149kB
+  - azure-storage-files-datalake-cpp     12.16.0  h1f05bef_1            conda-forge     Cached
+  + azure-storage-files-datalake-cpp     12.12.0  h0f25b8a_0            conda-forge      287kB
+  - icu                                     78.3  h33c6efd_0            conda-forge     Cached
+  + icu                                     73.2  h59595ed_0            conda-forge     Cached
+  - krb5                                  1.22.2  hbde042b_1            conda-forge     Cached
+  + krb5                                  1.21.3  h659f571_0            conda-forge     Cached
+  - libabseil                         20260107.1  cxx17_h7b12aa8_0      conda-forge     Cached
+  + libabseil                         20240116.2  cxx17_he02047a_1      conda-forge        1MB
+  - libarrow                              24.0.0  hb646d72_7_cpu        conda-forge     Cached
+  + libarrow                              16.1.0  hcb6531f_6_cpu        conda-forge        8MB
+  - libarrow-acero                        24.0.0  h635bf11_7_cpu        conda-forge     Cached
+  + libarrow-acero                        16.1.0  hac33072_6_cpu        conda-forge      599kB
+  - libarrow-dataset                      24.0.0  h635bf11_7_cpu        conda-forge     Cached
+  + libarrow-dataset                      16.1.0  hac33072_6_cpu        conda-forge      580kB
+  - libarrow-substrait                    24.0.0  hb4dd7c2_7_cpu        conda-forge     Cached
+  + libarrow-substrait                    16.1.0  h7e0c224_6_cpu        conda-forge      549kB
+  - libbrotlicommon                        1.2.0  hb03c661_1            conda-forge     Cached
+  + libbrotlicommon                        1.1.0  hb03c661_4            conda-forge       69kB
+  - libbrotlidec                           1.2.0  hb03c661_1            conda-forge     Cached
+  + libbrotlidec                           1.1.0  hb03c661_4            conda-forge       33kB
+  - libbrotlienc                           1.2.0  hb03c661_1            conda-forge     Cached
+  + libbrotlienc                           1.1.0  hb03c661_4            conda-forge      290kB
+  - libcurl                               8.20.0  hcf29cc6_0            conda-forge     Cached
+  + libcurl                                8.8.0  hca28451_1            conda-forge     Cached
+  - libgoogle-cloud                        3.5.0  h8d2ee43_1            conda-forge     Cached
+  + libgoogle-cloud                       2.24.0  h2736e30_0            conda-forge        1MB
+  - libgoogle-cloud-storage                3.5.0  hdbdcf42_1            conda-forge     Cached
+  + libgoogle-cloud-storage               2.24.0  h3d9a0c8_0            conda-forge      752kB
+  - libgrpc                               1.78.1  h1d1128b_0            conda-forge     Cached
+  + libgrpc                               1.62.2  h15f2491_0            conda-forge        7MB
+  - libnghttp2                            1.68.1  h877daf1_0            conda-forge     Cached
+  + libnghttp2                            1.58.0  h47da74e_1            conda-forge     Cached
+  - libopentelemetry-cpp                  1.27.0  h9692893_0            conda-forge     Cached
+  + libopentelemetry-cpp                  1.15.0  h66972aa_0            conda-forge      789kB
+  - libopentelemetry-cpp-headers          1.27.0  ha770c72_0            conda-forge     Cached
+  + libopentelemetry-cpp-headers          1.15.0  ha770c72_0            conda-forge      259kB
+  - libparquet                            24.0.0  h7376487_7_cpu        conda-forge     Cached
+  + libparquet                            16.1.0  h6a7eafb_6_cpu        conda-forge        1MB
+  - libprotobuf                           6.33.5  h6eeba95_1            conda-forge     Cached
+  + libprotobuf                           4.25.3  h08a7969_0            conda-forge        3MB
+  - libre2-11                         2025.11.05  h0dc7533_1            conda-forge     Cached
+  + libre2-11                         2023.09.01  h5a48ba9_2            conda-forge      233kB
+  - libsqlite                             3.53.2  h0c1763c_0            conda-forge     Cached
+  + libsqlite                             3.46.0  hde9e2c9_0            conda-forge     Cached
+  - libssh2                               1.11.1  hcf80075_0            conda-forge     Cached
+  + libssh2                               1.11.0  h0841786_0            conda-forge     Cached
+  - libthrift                             0.22.0  h7d032f7_2            conda-forge     Cached
+  + libthrift                             0.19.0  hb90f79a_1            conda-forge      409kB
+  - libutf8proc                           2.11.3  hfe17d71_0            conda-forge     Cached
+  + libutf8proc                            2.8.0  hf23e847_1            conda-forge       81kB
+  - libxml2                               2.15.3  h49c6c72_0            conda-forge     Cached
+  + libxml2                               2.12.7  hc051c1a_1            conda-forge     Cached
+  - libzlib                                1.3.2  h25fd6f3_2            conda-forge     Cached
+  + libzlib                               1.2.13  h4ab18f5_6            conda-forge     Cached
+  - lz4-c                                 1.10.0  h5888daf_1            conda-forge     Cached
+  + lz4-c                                  1.9.4  hcb278e6_0            conda-forge      143kB
+  - orc                                    2.3.0  h21090e2_0            conda-forge     Cached
+  + orc                                    2.0.1  h17fec99_1            conda-forge        1MB
+  - prometheus-cpp                         1.3.0  ha5d0236_0            conda-forge     Cached
+  + prometheus-cpp                         1.2.4  h90a924e_0            conda-forge      194kB
+  - pyarrow                               24.0.0  py310hff52083_0       conda-forge     Cached
+  + pyarrow                               16.1.0  py310h17c5347_1       conda-forge       27kB
+  - pyarrow-core                          24.0.0  py310h382fff3_0_cpu   conda-forge     Cached
+  + pyarrow-core                          16.1.0  py310h6f79a3a_1_cpu   conda-forge        4MB
+  - pysam                                 0.24.0  py310h4a09ff2_1       bioconda        Cached
+  + pysam                                 0.21.0  py310h41dec4a_1       bioconda           4MB
+  - python                               3.10.20  h267e890_1_cpython    conda-forge     Cached
+  + python                               3.10.14  hd12c33a_0_cpython    conda-forge     Cached
+  - re2                               2025.11.05  h5301d42_1            conda-forge     Cached
+  + re2                               2023.09.01  h7f4b329_2            conda-forge       27kB
+  - s2n                                    1.7.4  h92489ea_1            conda-forge     Cached
+  + s2n                                   1.4.15  he19d79f_0            conda-forge      350kB
+  - zlib                                   1.3.2  h25fd6f3_2            conda-forge     Cached
+  + zlib                                  1.2.13  h4ab18f5_6            conda-forge     Cached
+  - zstd                                   1.5.7  hb78ec9c_6            conda-forge     Cached
+  + zstd                                   1.5.6  ha6fb4c9_0            conda-forge     Cached
+
+  Summary:
+
+  Install: 4 packages
+  Remove: 2 packages
+  Change: 2 packages
+  Downgrade: 55 packages
+
+  Total download: 45MB
+
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+Transaction starting
+Unlinking ld_impl_linux-64-2.45.1-default_hbd61a6d_102
+Unlinking aws-c-common-0.14.0-hb03c661_0
+Unlinking s2n-1.7.4-h92489ea_1
+Unlinking lz4-c-1.10.0-h5888daf_1
+Unlinking krb5-1.22.2-hbde042b_1
+Unlinking libabseil-20260107.1-cxx17_h7b12aa8_0
+Unlinking libbrotlicommon-1.2.0-hb03c661_1
+Unlinking libopentelemetry-cpp-headers-1.27.0-ha770c72_0
+Unlinking libxml2-16-2.15.3-hca6bf5a_0
+Unlinking aws-checksums-0.2.10-haa0cbde_2
+Unlinking aws-c-compression-0.3.2-haa0cbde_2
+Unlinking aws-c-sdkutils-0.2.5-haa0cbde_0
+Unlinking aws-c-cal-0.9.14-h78948cc_2
+Unlinking libbrotlidec-1.2.0-hb03c661_1
+Unlinking libbrotlienc-1.2.0-hb03c661_1
+Unlinking icu-78.3-h33c6efd_0
+Unlinking libzlib-1.3.2-h25fd6f3_2
+Unlinking libxml2-2.15.3-h49c6c72_0
+Unlinking aws-c-io-0.26.3-h3bf836e_5
+Unlinking libssh2-1.11.1-hcf80075_0
+Unlinking libnghttp2-1.68.1-h877daf1_0
+Unlinking zstd-1.5.7-hb78ec9c_6
+Unlinking aws-c-event-stream-0.7.1-h9cf6be0_2
+Unlinking aws-c-http-0.11.0-h6488f85_2
+Unlinking libcurl-8.20.0-hcf29cc6_0
+Unlinking azure-core-cpp-1.16.3-h206d751_0
+Unlinking azure-storage-common-cpp-12.14.0-hf596fc9_1
+Unlinking aws-c-mqtt-0.16.0-h0d2f46f_0
+Unlinking aws-c-auth-0.10.3-hd2277e8_3
+Unlinking azure-storage-blobs-cpp-12.18.0-h74b55db_1
+Unlinking azure-identity-cpp-1.13.3-h71f81a8_2
+Unlinking libthrift-0.22.0-h7d032f7_2
+Unlinking libprotobuf-6.33.5-h6eeba95_1
+Unlinking tk-8.6.13-noxft_h366c992_103
+Unlinking libsqlite-3.53.2-h0c1763c_0
+Unlinking zlib-1.3.2-h25fd6f3_2
+Unlinking aws-c-s3-0.12.6-hb916526_0
+Unlinking azure-storage-files-datalake-cpp-12.16.0-h1f05bef_1
+Unlinking orc-2.3.0-h21090e2_0
+Unlinking python-3.10.20-h267e890_1_cpython
+Unlinking prometheus-cpp-1.3.0-ha5d0236_0
+Unlinking aws-crt-cpp-0.40.1-h7a9a9d6_1
+Unlinking aws-sdk-cpp-1.11.747-hf4c7647_7
+Unlinking libarrow-compute-24.0.0-h53684a4_7_cpu
+Unlinking libre2-11-2025.11.05-h0dc7533_1
+Unlinking re2-2025.11.05-h5301d42_1
+Unlinking libutf8proc-2.11.3-hfe17d71_0
+Unlinking libgrpc-1.78.1-h1d1128b_0
+Unlinking libgoogle-cloud-3.5.0-h8d2ee43_1
+Unlinking libgoogle-cloud-storage-3.5.0-hdbdcf42_1
+Unlinking libarrow-24.0.0-hb646d72_7_cpu
+Unlinking libarrow-acero-24.0.0-h635bf11_7_cpu
+Unlinking libparquet-24.0.0-h7376487_7_cpu
+Unlinking libarrow-dataset-24.0.0-h635bf11_7_cpu
+Unlinking pyarrow-core-24.0.0-py310h382fff3_0_cpu
+Unlinking libopentelemetry-cpp-1.27.0-h9692893_0
+Unlinking libarrow-substrait-24.0.0-hb4dd7c2_7_cpu
+Unlinking pyarrow-24.0.0-py310hff52083_0
+Unlinking pysam-0.24.0-py310h4a09ff2_1
+Linking liblzma-devel-5.8.3-hb03c661_0
+Linking xz-gpl-tools-5.8.3-ha02ee65_0
+Linking xz-tools-5.8.3-hb03c661_0
+Linking ld_impl_linux-64-2.45.1-bootstrap_ha15bf96_2
+Linking aws-c-common-0.9.19-h4ab18f5_0
+Linking s2n-1.4.15-he19d79f_0
+Linking lz4-c-1.9.4-hcb278e6_0
+Linking krb5-1.21.3-h659f571_0
+Linking libabseil-20240116.2-cxx17_he02047a_1
+Linking libbrotlicommon-1.1.0-hb03c661_4
+Linking libopentelemetry-cpp-headers-1.15.0-ha770c72_0
+Linking xz-5.8.3-ha02ee65_0
+Linking aws-checksums-0.1.18-h83b837d_6
+Linking aws-c-compression-0.2.18-h83b837d_6
+Linking aws-c-sdkutils-0.1.16-h83b837d_2
+Linking aws-c-cal-0.6.14-h88a6e22_1
+Linking libbrotlidec-1.1.0-hb03c661_4
+Linking libbrotlienc-1.1.0-hb03c661_4
+Linking icu-73.2-h59595ed_0
+Linking libzlib-1.2.13-h4ab18f5_6
+Linking libxml2-2.12.7-hc051c1a_1
+Linking aws-c-io-0.14.8-h21d4f22_5
+Linking libssh2-1.11.0-h0841786_0
+Linking libnghttp2-1.58.0-h47da74e_1
+Linking zstd-1.5.6-ha6fb4c9_0
+Linking aws-c-event-stream-0.4.2-ha47c788_12
+Linking aws-c-http-0.8.1-h29d6fba_17
+Linking libcurl-8.8.0-hca28451_1
+Linking azure-core-cpp-1.13.0-h935415a_0
+Linking azure-storage-common-cpp-12.8.0-ha3822c6_0
+Linking aws-c-mqtt-0.10.4-h759edc4_4
+Linking aws-c-auth-0.7.22-h96bc93b_2
+Linking azure-storage-blobs-cpp-12.13.0-h1d30c4a_0
+Linking azure-identity-cpp-1.9.0-hd126650_0
+Linking libthrift-0.19.0-hb90f79a_1
+Linking libprotobuf-4.25.3-h08a7969_0
+Linking tk-8.6.13-noxft_h4845f30_101
+Linking libsqlite-3.46.0-hde9e2c9_0
+Linking zlib-1.2.13-h4ab18f5_6
+Linking aws-c-s3-0.5.9-h594631b_3
+Linking azure-storage-files-datalake-cpp-12.12.0-h0f25b8a_0
+Linking orc-2.0.1-h17fec99_1
+Linking python-3.10.14-hd12c33a_0_cpython
+Linking prometheus-cpp-1.2.4-h90a924e_0
+Linking aws-crt-cpp-0.26.9-he3a8b3b_0
+Linking aws-sdk-cpp-1.11.329-hba8bd5f_3
+Linking libre2-11-2023.09.01-h5a48ba9_2
+Linking re2-2023.09.01-h7f4b329_2
+Linking libutf8proc-2.8.0-hf23e847_1
+Linking libgrpc-1.62.2-h15f2491_0
+Linking libgoogle-cloud-2.24.0-h2736e30_0
+Linking libgoogle-cloud-storage-2.24.0-h3d9a0c8_0
+Linking libarrow-16.1.0-hcb6531f_6_cpu
+Linking libarrow-acero-16.1.0-hac33072_6_cpu
+Linking libparquet-16.1.0-h6a7eafb_6_cpu
+Linking libarrow-dataset-16.1.0-hac33072_6_cpu
+Linking pyarrow-core-16.1.0-py310h6f79a3a_1_cpu
+Linking libopentelemetry-cpp-1.15.0-h66972aa_0
+Linking libarrow-substrait-16.1.0-h7e0c224_6_cpu
+Linking pyarrow-16.1.0-py310h17c5347_1
+Linking pysam-0.21.0-py310h41dec4a_1
+
+Transaction finished
+

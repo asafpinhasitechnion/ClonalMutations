@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Download the submitted Cell Ranger BAM for the P3 cSCC tumor sample.
-# Source: ENA submitted files for SRR11832842 / GSM4284229.
+# Download the submitted Cell Ranger BAM for the P9 cSCC tumor scRNA sample.
+# Source: ENA submitted files for SRR11832857 / GSM4284244.
 set -euo pipefail
 
 DATASET_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT="$DATASET_DIR/bam/P3_scRNA"
+OUT="$DATASET_DIR/bam/P9_scRNA"
 mkdir -p "$OUT"
 
 download_one() {
@@ -32,13 +32,13 @@ download_one() {
 }
 
 download_one \
-  "https://ftp.sra.ebi.ac.uk/vol1/run/SRR118/SRR11832842/P3_cSCC_scRNA_1.bam" \
-  "$OUT/P3_cSCC_scRNA_1.bam" \
-  "3632920739" \
-  "1ec67c1a261d5b5cf80bff96ec28df4e"
+  "https://ftp.sra.ebi.ac.uk/vol1/run/SRR118/SRR11832857/P9_cSCC_scRNA.bam" \
+  "$OUT/P9_cSCC_scRNA.bam" \
+  "30913461365" \
+  "62d20a5397b892363a3ad447ae1a94df"
 
 download_one \
-  "https://ftp.sra.ebi.ac.uk/vol1/run/SRR118/SRR11832842/P3_cSCC_scRNA_1.bam.bai" \
-  "$OUT/P3_cSCC_scRNA_1.bam.bai" \
-  "5704208" \
-  "5cfec86031055fffff654112c4129fb7"
+  "https://ftp.sra.ebi.ac.uk/vol1/run/SRR118/SRR11832857/P9_cSCC_scRNA.bam.bai" \
+  "$OUT/P9_cSCC_scRNA.bam.bai" \
+  "11721680" \
+  "630718745a700236853e70518aea4b49"

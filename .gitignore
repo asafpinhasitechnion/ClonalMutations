@@ -35,6 +35,9 @@ external/SComatic/bed_files_of_interest/
 *:Zone.Identifier
 *:sec.endpointdlp
 
+# ── Extraction outputs (regenerable Parquet data layer) ──
+results/**/*.parquet
+
 # ── Python ──
 __pycache__/
 *.pyc

@@ -1,0 +1,213 @@
+conda-forge/linux-64                                        Using cache
+conda-forge/noarch                                          Using cache
+bioconda/linux-64                                           Using cache
+bioconda/noarch                                             Using cache
+
+
+Transaction
+
+  Prefix: /home/asafpinhasi/miniforge3/envs/clonemut
+
+  Updating specs:
+
+   - python=3.7
+   - pysam=0.21.0
+   - htslib=1.17
+   - numpy
+   - pyarrow
+   - pytest
+
+
+  Package                    Version  Build                 Channel           Size
+────────────────────────────────────────────────────────────────────────────────────
+  Install:
+────────────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex                4.5  20_gnu                conda-forge     Cached
+  + arrow-cpp                  9.0.0  py37hb04813e_7_cpu    conda-forge       33MB
+  + aws-c-cal                 0.5.11  h95a6274_0            conda-forge       37kB
+  + aws-c-common               0.6.2  h7f98852_0            conda-forge      172kB
+  + aws-c-event-stream         0.2.7  h3541f99_13           conda-forge       48kB
+  + aws-c-io                  0.10.5  hfb6a706_0            conda-forge      124kB
+  + aws-checksums             0.1.11  ha31a3da_7            conda-forge       51kB
+  + aws-sdk-cpp              1.8.186  hecaee15_4            conda-forge        5MB
+  + bzip2                      1.0.8  hda65f42_9            conda-forge     Cached
+  + c-ares                    1.34.6  hb03c661_0            conda-forge     Cached
+  + ca-certificates        2026.6.17  hbd8a1cb_0            conda-forge     Cached
+  + colorama                   0.4.6  pyhd8ed1ab_0          conda-forge       25kB
+  + exceptiongroup             1.2.2  pyhd8ed1ab_0          conda-forge       20kB
+  + gflags                     2.2.2  h5888daf_1005         conda-forge     Cached
+  + glog                       0.6.0  h6f12383_0            conda-forge      114kB
+  + grpc-cpp                  1.47.1  h05bd8bd_7            conda-forge        5MB
+  + htslib                      1.17  h6bc39ce_1            bioconda        Cached
+  + importlib-metadata        4.11.4  py37h89c1867_0        conda-forge       34kB
+  + importlib_metadata        4.11.4  hd8ed1ab_0            conda-forge        4kB
+  + iniconfig                  2.0.0  pyhd8ed1ab_0          conda-forge       11kB
+  + keyutils                   1.6.3  hb9d3cd8_0            conda-forge     Cached
+  + krb5                      1.20.1  hf9c8cef_0            conda-forge     Cached
+  + ld_impl_linux-64          2.45.1  bootstrap_ha15bf96_2  conda-forge     Cached
+  + libabseil             20220623.0  cxx17_h05df665_6      conda-forge        1MB
+  + libblas                   3.11.0  8_h4a7cf45_openblas   conda-forge     Cached
+  + libbrotlicommon            1.0.9  h166bdaf_9            conda-forge       71kB
+  + libbrotlidec               1.0.9  h166bdaf_9            conda-forge       33kB
+  + libbrotlienc               1.0.9  h166bdaf_9            conda-forge      265kB
+  + libcblas                  3.11.0  8_h0358290_openblas   conda-forge     Cached
+  + libcrc32c                  1.1.2  h9c3ff4c_0            conda-forge     Cached
+  + libcurl                   7.87.0  h6312ad2_0            conda-forge     Cached
+  + libdeflate                  1.25  h17f619e_0            conda-forge     Cached
+  + libedit             3.1.20250104  pl5321h7949ede_0      conda-forge     Cached
+  + libev                       4.33  hd590300_2            conda-forge     Cached
+  + libevent                  2.1.10  h9b69904_4            conda-forge        1MB
+  + libffi                     3.4.6  h2dba641_1            conda-forge     Cached
+  + libgcc                    15.2.0  he0feb66_19           conda-forge     Cached
+  + libgcc-ng                 15.2.0  h69a702a_19           conda-forge     Cached
+  + libgfortran               15.2.0  h69a702a_19           conda-forge     Cached
+  + libgfortran5              15.2.0  h68bc16d_19           conda-forge     Cached
+  + libgomp                   15.2.0  he0feb66_19           conda-forge     Cached
+  + libgoogle-cloud            2.2.0  h838d150_1            conda-forge       10MB
+  + liblapack                 3.11.0  8_h47877c9_openblas   conda-forge     Cached
+  + libnghttp2                1.51.0  hdcd2b5c_0            conda-forge     Cached
+  + libnsl                     2.0.1  hb9d3cd8_1            conda-forge     Cached
+  + libopenblas               0.3.33  pthreads_h94d23a6_0   conda-forge     Cached
+  + libprotobuf              3.21.12  hfc55251_2            conda-forge        2MB
+  + libsqlite                 3.46.0  hde9e2c9_0            conda-forge     Cached
+  + libssh2                   1.10.0  haa6b8db_3            conda-forge     Cached
+  + libstdcxx                 15.2.0  h934c35e_19           conda-forge     Cached
+  + libstdcxx-ng              15.2.0  hdf11a46_19           conda-forge     Cached
+  + libthrift                 0.16.0  h491838f_2            conda-forge        5MB
+  + libutf8proc                2.8.0  hf23e847_1            conda-forge     Cached
+  + libzlib                   1.2.13  h4ab18f5_6            conda-forge     Cached
+  + lz4-c                      1.9.4  hcb278e6_0            conda-forge     Cached
+  + ncurses                      6.6  hdb14827_0            conda-forge     Cached
+  + numpy                     1.21.6  py37h976b520_0        conda-forge     Cached
+  + openssl                   1.1.1w  hd590300_0            conda-forge     Cached
+  + orc                        1.8.0  h09e0d61_0            conda-forge        1MB
+  + packaging                   23.2  pyhd8ed1ab_0          conda-forge       49kB
+  + parquet-cpp                1.5.1  2                     conda-forge        3kB
+  + pip                         24.0  pyhd8ed1ab_0          conda-forge     Cached
+  + pluggy                     1.0.0  py37h89c1867_3        conda-forge       26kB
+  + pyarrow                    9.0.0  py37h37a9ac3_7_cpu    conda-forge        4MB
+  + pysam                     0.21.0  py37hee149a5_0        bioconda        Cached
+  + pytest                     7.4.4  pyhd8ed1ab_0          conda-forge      245kB
+  + python                    3.7.12  hb7a2778_100_cpython  conda-forge     Cached
+  + python_abi                   3.7  4_cp37m               conda-forge     Cached
+  + re2                   2022.06.01  h27087fc_1            conda-forge      196kB
+  + readline                     8.3  h853b02a_0            conda-forge     Cached
+  + s2n                       1.0.10  h9b69904_0            conda-forge      452kB
+  + setuptools                69.0.3  pyhd8ed1ab_0          conda-forge     Cached
+  + snappy                    1.1.10  hdb0a2a9_1            conda-forge       40kB
+  + sqlite                    3.46.0  h6d4b2fc_0            conda-forge     Cached
+  + tk                        8.6.13  noxft_h4845f30_101    conda-forge     Cached
+  + tomli                      2.0.2  pyhd8ed1ab_0          conda-forge       18kB
+  + typing_extensions          4.7.1  pyha770c72_0          conda-forge       36kB
+  + wheel                     0.42.0  pyhd8ed1ab_0          conda-forge     Cached
+  + xz                         5.2.6  h166bdaf_0            conda-forge     Cached
+  + zipp                      3.15.0  pyhd8ed1ab_0          conda-forge       17kB
+  + zlib                      1.2.13  h4ab18f5_6            conda-forge     Cached
+  + zstd                       1.5.6  ha6fb4c9_0            conda-forge     Cached
+
+  Summary:
+
+  Install: 82 packages
+
+  Total download: 69MB
+
+────────────────────────────────────────────────────────────────────────────────────
+
+
+Confirm changes: [Y/n] 
+Transaction starting
+Linking python_abi-3.7-4_cp37m
+Linking ld_impl_linux-64-2.45.1-bootstrap_ha15bf96_2
+Linking libgomp-15.2.0-he0feb66_19
+Linking _openmp_mutex-4.5-20_gnu
+Linking libgcc-15.2.0-he0feb66_19
+Linking libgfortran5-15.2.0-h68bc16d_19
+Linking keyutils-1.6.3-hb9d3cd8_0
+Linking libutf8proc-2.8.0-hf23e847_1
+Linking c-ares-1.34.6-hb03c661_0
+Linking ncurses-6.6-hdb14827_0
+Linking libstdcxx-15.2.0-h934c35e_19
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libffi-3.4.6-h2dba641_1
+Linking libgcc-ng-15.2.0-h69a702a_19
+Linking libdeflate-1.25-h17f619e_0
+Linking bzip2-1.0.8-hda65f42_9
+Linking libgfortran-15.2.0-h69a702a_19
+Linking libedit-3.1.20250104-pl5321h7949ede_0
+Linking readline-8.3-h853b02a_0
+Linking gflags-2.2.2-h5888daf_1005
+Linking libstdcxx-ng-15.2.0-hdf11a46_19
+Linking libev-4.33-hd590300_2
+Linking aws-c-common-0.6.2-h7f98852_0
+Linking libbrotlicommon-1.0.9-h166bdaf_9
+Linking libzlib-1.2.13-h4ab18f5_6
+Linking xz-5.2.6-h166bdaf_0
+Linking libopenblas-0.3.33-pthreads_h94d23a6_0
+Linking libcrc32c-1.1.2-h9c3ff4c_0
+Linking re2-2022.06.01-h27087fc_1
+Linking libabseil-20220623.0-cxx17_h05df665_6
+Linking snappy-1.1.10-hdb0a2a9_1
+Linking lz4-c-1.9.4-hcb278e6_0
+Linking glog-0.6.0-h6f12383_0
+Linking aws-checksums-0.1.11-ha31a3da_7
+Linking libbrotlidec-1.0.9-h166bdaf_9
+Linking libbrotlienc-1.0.9-h166bdaf_9
+Linking zstd-1.5.6-ha6fb4c9_0
+Linking libprotobuf-3.21.12-hfc55251_2
+Linking tk-8.6.13-noxft_h4845f30_101
+Linking libsqlite-3.46.0-hde9e2c9_0
+Linking zlib-1.2.13-h4ab18f5_6
+Linking libblas-3.11.0-8_h4a7cf45_openblas
+Linking orc-1.8.0-h09e0d61_0
+Linking sqlite-3.46.0-h6d4b2fc_0
+Linking libcblas-3.11.0-8_h0358290_openblas
+Linking liblapack-3.11.0-8_h47877c9_openblas
+Linking ca-certificates-2026.6.17-hbd8a1cb_0
+Linking openssl-1.1.1w-hd590300_0
+Linking s2n-1.0.10-h9b69904_0
+Linking aws-c-cal-0.5.11-h95a6274_0
+Linking libevent-2.1.10-h9b69904_4
+Linking libssh2-1.10.0-haa6b8db_3
+Linking libnghttp2-1.51.0-hdcd2b5c_0
+Linking grpc-cpp-1.47.1-h05bd8bd_7
+Linking krb5-1.20.1-hf9c8cef_0
+Linking python-3.7.12-hb7a2778_100_cpython
+Linking aws-c-io-0.10.5-hfb6a706_0
+Linking libthrift-0.16.0-h491838f_2
+Linking libcurl-7.87.0-h6312ad2_0
+Linking aws-c-event-stream-0.2.7-h3541f99_13
+Linking libgoogle-cloud-2.2.0-h838d150_1
+Linking aws-sdk-cpp-1.8.186-hecaee15_4
+Linking wheel-0.42.0-pyhd8ed1ab_0
+Linking setuptools-69.0.3-pyhd8ed1ab_0
+Linking pip-24.0-pyhd8ed1ab_0
+Linking zipp-3.15.0-pyhd8ed1ab_0
+Linking typing_extensions-4.7.1-pyha770c72_0
+Linking tomli-2.0.2-pyhd8ed1ab_0
+Linking iniconfig-2.0.0-pyhd8ed1ab_0
+Linking exceptiongroup-1.2.2-pyhd8ed1ab_0
+Linking packaging-23.2-pyhd8ed1ab_0
+Linking colorama-0.4.6-pyhd8ed1ab_0
+Linking htslib-1.17-h6bc39ce_1
+Linking pysam-0.21.0-py37hee149a5_0
+Linking numpy-1.21.6-py37h976b520_0
+Linking importlib-metadata-4.11.4-py37h89c1867_0
+Linking arrow-cpp-9.0.0-py37hb04813e_7_cpu
+Linking importlib_metadata-4.11.4-hd8ed1ab_0
+Linking parquet-cpp-1.5.1-2
+Linking pluggy-1.0.0-py37h89c1867_3
+Linking pyarrow-9.0.0-py37h37a9ac3_7_cpu
+Linking pytest-7.4.4-pyhd8ed1ab_0
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    mamba activate clonemut
+
+Or to execute a single command in this environment, use:
+
+    mamba run -n clonemut mycommand
+
