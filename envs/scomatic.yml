@@ -1,0 +1,26 @@
+# Environment to RUN SComatic's core detection pipeline (Split -> Count -> Merge
+# -> Calling step1/step2). Verified working: SComatic example recovers its 5 known
+# SNVs end-to-end. The core path needs NO R/rpy2 (only optional beta-binomial
+# re-estimation does), so rpy2/VGAM are intentionally omitted.
+#
+# Build with mamba (NOT `conda env create` + pip — SComatic's pinned rpy2 wheel
+# fails to build on a modern system, and pip in py3.7 is broken here):
+#   mamba env create -f envs/scomatic.yml
+#
+# Key version pins that matter (learned the hard way):
+#   - pybedtools=0.8.1 + bedtools=2.30.0  (newer bedtools breaks pybedtools 0.8.1
+#     Interval comparison in BaseCellCounter)
+#   - numpy=1.21.6 pandas=1.3.5 scipy=1.7.3  (SComatic's tested versions)
+name: scomatic
+channels: [bioconda, conda-forge]
+dependencies:
+  - python=3.7
+  - samtools
+  - bedtools=2.30.0
+  - datamash
+  - pysam>=0.16
+  - numpy=1.21.6
+  - pandas=1.3.5
+  - scipy=1.7.3
+  - pybedtools=0.8.1
+  - numpy_groupies

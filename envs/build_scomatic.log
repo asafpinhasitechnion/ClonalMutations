@@ -1,0 +1,291 @@
+[Sun Jun 21 14:27:28 IDT 2026] creating scomatic env
+
+
+Transaction
+
+  Prefix: /home/asafpinhasi/miniforge3/envs/scomatic
+
+  Updating specs:
+
+   - python=3.7
+   - r-base=3.6.1
+   - samtools
+   - bedtools
+   - datamash
+   - pip
+
+
+  Package                          Version  Build                 Channel           Size
+──────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+──────────────────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex                      4.5  20_gnu                conda-forge       29kB
+  + _r-mutex                         1.0.1  anacondar_1           conda-forge        4kB
+  + bedtools                        2.31.1  hf5e1c6e_2            bioconda           2MB
+  + binutils_impl_linux-64          2.36.1  h193b22a_2            conda-forge       11MB
+  + binutils_linux-64                 2.36  hf3e587d_33           conda-forge       23kB
+  + bwidget                         1.10.1  ha770c72_1            conda-forge      130kB
+  + bzip2                            1.0.8  hda65f42_9            conda-forge      260kB
+  + ca-certificates              2026.6.17  hbd8a1cb_0            conda-forge      129kB
+  + cairo                           1.16.0  hcf35c78_1003         conda-forge        2MB
+  + curl                            7.68.0  hf8cf82a_0            conda-forge      140kB
+  + datamash                           1.9  hb9d3cd8_0            conda-forge      358kB
+  + expat                            2.8.1  hecca717_1            conda-forge      148kB
+  + fontconfig                      2.14.2  h14ed4e7_0            conda-forge     Cached
+  + freetype                        2.12.1  h267a509_2            conda-forge     Cached
+  + fribidi                         1.0.16  hb03c661_0            conda-forge     Cached
+  + gcc_impl_linux-64                7.5.0  habd7529_20           conda-forge       40MB
+  + gcc_linux-64                     7.5.0  h47867f9_33           conda-forge       24kB
+  + gfortran_impl_linux-64           7.5.0  h56cb351_20           conda-forge        9MB
+  + gfortran_linux-64                7.5.0  h78c8a43_33           conda-forge       23kB
+  + glib                            2.80.2  hf974151_0            conda-forge     Cached
+  + glib-tools                      2.80.2  hb6ce0ca_0            conda-forge     Cached
+  + graphite2                       1.3.15  hecca717_0            conda-forge      100kB
+  + gsl                                2.5  h294904e_1            conda-forge        3MB
+  + gxx_impl_linux-64                7.5.0  hd0bb8aa_20           conda-forge       10MB
+  + gxx_linux-64                     7.5.0  h555fc39_33           conda-forge       23kB
+  + harfbuzz                         2.4.0  h9f30f68_3            conda-forge        2MB
+  + htslib                          1.10.2  h78d89cc_0            bioconda           2MB
+  + icu                               64.2  he1b5a44_1            conda-forge       13MB
+  + jpeg                                9e  h0b41bf4_3            conda-forge     Cached
+  + kernel-headers_linux-64         5.14.0  he073ed8_3            conda-forge        1MB
+  + krb5                            1.16.4  h2fd8d38_0            conda-forge        1MB
+  + ld_impl_linux-64                2.36.1  hea4e1c9_2            conda-forge      683kB
+  + lerc                             4.1.0  hdb68285_0            conda-forge      262kB
+  + libblas                          3.9.0  28_h59b9bed_openblas  conda-forge       17kB
+  + libcblas                         3.9.0  28_he106b2a_openblas  conda-forge       17kB
+  + libcurl                         7.68.0  hda55be3_0            conda-forge      577kB
+  + libdeflate                        1.25  h17f619e_0            conda-forge       73kB
+  + libedit                   3.1.20191231  he28a2e2_2            conda-forge      124kB
+  + libexpat                         2.8.1  hecca717_1            conda-forge       78kB
+  + libffi                           3.4.6  h2dba641_1            conda-forge       57kB
+  + libgcc                          15.2.0  he0feb66_19           conda-forge        1MB
+  + libgcc-devel_linux-64            7.5.0  hda03d7c_20           conda-forge        4MB
+  + libgcc-ng                       15.2.0  h69a702a_19           conda-forge       28kB
+  + libgfortran-ng                   7.5.0  h14aa051_20           conda-forge       23kB
+  + libgfortran4                     7.5.0  h14aa051_20           conda-forge        1MB
+  + libgfortran5                    15.2.0  h68bc16d_19           conda-forge        2MB
+  + libglib                         2.80.2  hf974151_0            conda-forge     Cached
+  + libgomp                         15.2.0  he0feb66_19           conda-forge      604kB
+  + libiconv                          1.18  h3b78370_2            conda-forge     Cached
+  + liblapack                        3.9.0  28_h7ac8fdf_openblas  conda-forge       17kB
+  + libnsl                           2.0.1  hb9d3cd8_1            conda-forge     Cached
+  + libopenblas                     0.3.28  pthreads_h94d23a6_0   conda-forge        6MB
+  + libpng                          1.6.43  h2797004_0            conda-forge     Cached
+  + libssh2                         1.10.0  haa6b8db_3            conda-forge      239kB
+  + libstdcxx                       15.2.0  h934c35e_19           conda-forge        6MB
+  + libstdcxx-devel_linux-64         7.5.0  hb016644_20           conda-forge       10MB
+  + libstdcxx-ng                    15.2.0  hdf11a46_19           conda-forge       28kB
+  + libtiff                          4.4.0  h82bc61c_5            conda-forge      485kB
+  + libuuid                         2.42.2  h5347b49_0            conda-forge       40kB
+  + libwebp-base                     1.6.0  hd42ef1d_0            conda-forge     Cached
+  + libxcb                          1.17.0  h8a09558_0            conda-forge     Cached
+  + libxml2                         2.9.10  hee79883_0            conda-forge        1MB
+  + libzlib                         1.2.13  h4ab18f5_6            conda-forge     Cached
+  + make                             4.4.1  hb9d3cd8_2            conda-forge      513kB
+  + ncurses                            6.2  h58526e2_4            conda-forge        1MB
+  + openssl                         1.1.1w  hd590300_0            conda-forge        2MB
+  + pango                           1.42.4  h7062337_4            conda-forge      533kB
+  + pcre                              8.45  h9c3ff4c_0            conda-forge      259kB
+  + pcre2                            10.43  hcad00b1_0            conda-forge     Cached
+  + pip                               24.0  pyhd8ed1ab_0          conda-forge        1MB
+  + pixman                          0.38.0  h516909a_1003         conda-forge      608kB
+  + pthread-stubs                      0.4  hb9d3cd8_1002         conda-forge     Cached
+  + python                          3.7.12  hb7a2778_100_cpython  conda-forge       60MB
+  + r-base                           3.6.1  h3a67422_6            conda-forge       24MB
+  + readline                           8.1  h46c0cb4_0            conda-forge      302kB
+  + samtools                          1.10  h2e538c0_3            bioconda         346kB
+  + sed                               4.10  h19d0853_0            conda-forge      268kB
+  + setuptools                      69.0.3  pyhd8ed1ab_0          conda-forge      471kB
+  + sqlite                          3.37.0  h9cd32fc_0            conda-forge        2MB
+  + sysroot_linux-64                  2.34  h087de78_3            conda-forge       41MB
+  + tk                              8.6.13  noxft_h4845f30_101    conda-forge     Cached
+  + tktable                           2.10  h5a7a40f_8            conda-forge      103kB
+  + tzdata                           2025c  hc9c84f9_1            conda-forge     Cached
+  + wheel                           0.42.0  pyhd8ed1ab_0          conda-forge       58kB
+  + xorg-libice                      1.1.2  hb9d3cd8_0            conda-forge     Cached
+  + xorg-libsm                       1.2.6  he73a12e_0            conda-forge     Cached
+  + xorg-libx11                     1.8.13  he1eb515_0            conda-forge      840kB
+  + xorg-libxau                     1.0.12  hb03c661_1            conda-forge     Cached
+  + xorg-libxdmcp                    1.1.5  hb03c661_1            conda-forge     Cached
+  + xorg-libxext                     1.3.7  hb03c661_0            conda-forge       50kB
+  + xorg-libxrender                 0.9.12  hb9d3cd8_0            conda-forge     Cached
+  + xz                               5.2.6  h166bdaf_0            conda-forge      418kB
+  + zlib                            1.2.13  h4ab18f5_6            conda-forge     Cached
+  + zstd                             1.5.6  ha6fb4c9_0            conda-forge     Cached
+
+  Summary:
+
+  Install: 94 packages
+
+  Total download: 268MB
+
+──────────────────────────────────────────────────────────────────────────────────────────
+
+
+Confirm changes: [Y/n] 
+Transaction starting
+Linking libgfortran4-7.5.0-h14aa051_20
+Linking ld_impl_linux-64-2.36.1-hea4e1c9_2
+Linking libgomp-15.2.0-he0feb66_19
+Linking libstdcxx-devel_linux-64-7.5.0-hb016644_20
+Linking libgcc-devel_linux-64-7.5.0-hda03d7c_20
+Linking libgfortran-ng-7.5.0-h14aa051_20
+Linking _openmp_mutex-4.5-20_gnu
+Linking libgcc-15.2.0-he0feb66_19
+Linking libexpat-2.8.1-hecca717_1
+Linking libgfortran5-15.2.0-h68bc16d_19
+warning  libmamba [libgfortran5-15.2.0-h68bc16d_19] The following files were already present in the environment:
+    - lib/libgfortran.so
+    - share/licenses/libgfortran/RUNTIME.LIBRARY.EXCEPTION
+Linking libwebp-base-1.6.0-hd42ef1d_0
+Linking xorg-libxdmcp-1.1.5-hb03c661_1
+Linking xorg-libxau-1.0.12-hb03c661_1
+Linking pthread-stubs-0.4-hb9d3cd8_1002
+Linking xorg-libice-1.1.2-hb9d3cd8_0
+Linking libiconv-1.18-h3b78370_2
+Linking fribidi-1.0.16-hb03c661_0
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libffi-3.4.6-h2dba641_1
+Linking sed-4.10-h19d0853_0
+Linking make-4.4.1-hb9d3cd8_2
+Linking libuuid-2.42.2-h5347b49_0
+Linking libstdcxx-15.2.0-h934c35e_19
+Linking libdeflate-1.25-h17f619e_0
+Linking bzip2-1.0.8-hda65f42_9
+Linking libgcc-ng-15.2.0-h69a702a_19
+Linking datamash-1.9-hb9d3cd8_0
+Linking expat-2.8.1-hecca717_1
+Linking libxcb-1.17.0-h8a09558_0
+Linking xorg-libsm-1.2.6-he73a12e_0
+Linking lerc-4.1.0-hdb68285_0
+Linking graphite2-1.3.15-hecca717_0
+Linking libstdcxx-ng-15.2.0-hdf11a46_19
+Linking pixman-0.38.0-h516909a_1003
+Linking libopenblas-0.3.28-pthreads_h94d23a6_0
+Linking jpeg-9e-h0b41bf4_3
+Linking ncurses-6.2-h58526e2_4
+Linking xz-5.2.6-h166bdaf_0
+Linking libzlib-1.2.13-h4ab18f5_6
+Linking xorg-libx11-1.8.13-he1eb515_0
+Linking pcre-8.45-h9c3ff4c_0
+Linking icu-64.2-he1b5a44_1
+Linking libblas-3.9.0-28_h59b9bed_openblas
+Linking libedit-3.1.20191231-he28a2e2_2
+Linking readline-8.1-h46c0cb4_0
+Linking zstd-1.5.6-ha6fb4c9_0
+Linking pcre2-10.43-hcad00b1_0
+Linking tk-8.6.13-noxft_h4845f30_101
+Linking libpng-1.6.43-h2797004_0
+Linking zlib-1.2.13-h4ab18f5_6
+Linking xorg-libxrender-0.9.12-hb9d3cd8_0
+Linking xorg-libxext-1.3.7-hb03c661_0
+Linking libcblas-3.9.0-28_he106b2a_openblas
+Linking liblapack-3.9.0-28_h7ac8fdf_openblas
+Linking libtiff-4.4.0-h82bc61c_5
+Linking libglib-2.80.2-hf974151_0
+Linking tktable-2.10-h5a7a40f_8
+Linking bwidget-1.10.1-ha770c72_1
+Linking freetype-2.12.1-h267a509_2
+Linking sqlite-3.37.0-h9cd32fc_0
+Linking libxml2-2.9.10-hee79883_0
+Linking gsl-2.5-h294904e_1
+Linking glib-tools-2.80.2-hb6ce0ca_0
+Linking fontconfig-2.14.2-h14ed4e7_0
+Linking kernel-headers_linux-64-5.14.0-he073ed8_3
+Linking ca-certificates-2026.6.17-hbd8a1cb_0
+Linking tzdata-2025c-hc9c84f9_1
+Linking _r-mutex-1.0.1-anacondar_1
+Linking sysroot_linux-64-2.34-h087de78_3
+Linking bedtools-2.31.1-hf5e1c6e_2
+Linking openssl-1.1.1w-hd590300_0
+Linking binutils_impl_linux-64-2.36.1-h193b22a_2
+Linking libssh2-1.10.0-haa6b8db_3
+Linking krb5-1.16.4-h2fd8d38_0
+Linking python-3.7.12-hb7a2778_100_cpython
+Linking gcc_impl_linux-64-7.5.0-habd7529_20
+Linking binutils_linux-64-2.36-hf3e587d_33
+Linking libcurl-7.68.0-hda55be3_0
+Linking gfortran_impl_linux-64-7.5.0-h56cb351_20
+Linking gxx_impl_linux-64-7.5.0-hd0bb8aa_20
+Linking gcc_linux-64-7.5.0-h47867f9_33
+Linking curl-7.68.0-hf8cf82a_0
+Linking gfortran_linux-64-7.5.0-h78c8a43_33
+Linking gxx_linux-64-7.5.0-h555fc39_33
+Linking pip-24.0-pyhd8ed1ab_0
+Linking setuptools-69.0.3-pyhd8ed1ab_0
+Linking wheel-0.42.0-pyhd8ed1ab_0
+Linking htslib-1.10.2-h78d89cc_0
+Linking samtools-1.10-h2e538c0_3
+Linking glib-2.80.2-hf974151_0
+Linking cairo-1.16.0-hcf35c78_1003
+Linking harfbuzz-2.4.0-h9f30f68_3
+Linking pango-1.42.4-h7062337_4
+Linking r-base-3.6.1-h3a67422_6
+
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    mamba activate scomatic
+
+Or to execute a single command in this environment, use:
+
+    mamba run -n scomatic mycommand
+
+warning  libmamba You are using 'pip' as an additional package manager.
+    Be aware that packages installed with 'pip' are managed independently from 'conda-forge' channel.
+
+Installing pip packages: numpy==1.21.6, numpy-groupies==0.9.14, pandas==1.3.5, pybedtools==0.8.1, pysam==0.16.0.1, rpy2==2.9.4, scipy==1.7.3
+ERROR: Exception:
+Traceback (most recent call last):
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/cli/base_command.py", line 180, in exc_logging_wrapper
+    status = run_func(*args)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/cli/req_command.py", line 245, in wrapper
+    return func(self, options, args)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/commands/install.py", line 378, in run
+    reqs, check_supported_wheels=not options.target_dir
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/resolution/resolvelib/resolver.py", line 96, in resolve
+    collected.requirements, max_rounds=limit_how_complex_resolution_can_be
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_vendor/resolvelib/resolvers.py", line 546, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_vendor/resolvelib/resolvers.py", line 397, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_vendor/resolvelib/resolvers.py", line 173, in _add_to_criteria
+    if not criterion.candidates:
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_vendor/resolvelib/structs.py", line 156, in __bool__
+    return bool(self._sequence)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py", line 155, in __bool__
+    return any(self)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py", line 143, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py", line 44, in _iter_built
+    for version, func in infos:
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 300, in iter_index_candidate_infos
+    hashes=hashes,
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/package_finder.py", line 890, in find_best_candidate
+    candidates = self.find_all_candidates(project_name)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/package_finder.py", line 831, in find_all_candidates
+    page_candidates = list(page_candidates_it)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/sources.py", line 194, in page_candidates
+    yield from self._candidates_from_page(self._link)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/package_finder.py", line 795, in process_project_url
+    page_links = list(parse_links(index_response))
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/collector.py", line 223, in wrapper_wrapper
+    return list(fn(page))
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/index/collector.py", line 238, in parse_links
+    link = Link.from_json(file, page.url)
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/site-packages/pip/_internal/models/link.py", line 275, in from_json
+    url = _ensure_quoted_url(urllib.parse.urljoin(page_url, file_url))
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/urllib/parse.py", line 528, in urljoin
+    params, query, fragment)))
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/urllib/parse.py", line 485, in urlunparse
+    _coerce_args(*components))
+  File "/home/asafpinhasi/miniforge3/envs/scomatic/lib/python3.7/urllib/parse.py", line 123, in _coerce_args
+    raise TypeError("Cannot mix str and non-str arguments")
+TypeError: Cannot mix str and non-str arguments
+critical libmamba pip failed to install packages
+[Sun Jun 21 14:27:48 IDT 2026] ENV BUILD FAILED (see log)

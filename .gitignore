@@ -1,0 +1,45 @@
+# ── Raw / downloaded sequencing data (re-fetch via each dataset's scripts) ──
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.sra
+*.sralite
+*.tar
+Data/**/fastq/
+Data/**/sra/
+Data/**/bam/
+Data/**/paper/
+
+# ── Reference: genome, annotation, indexes, barcode whitelist (regenerable) ──
+*.fa
+*.fasta
+*.fa.gz
+*.fasta.gz
+*.gtf
+*.gtf.gz
+reference/star_index_*/
+reference/737K-*.txt
+reference/737K-*.txt.gz
+
+# ── SComatic bundled reference data (large; ships with upstream clone) ──
+external/SComatic/PoNs/
+external/SComatic/RNAediting/
+external/SComatic/example_data/
+external/SComatic/bed_files_of_interest/
+
+# ── WSL / Windows alternate-data-stream junk ──
+*:Zone.Identifier
+*:sec.endpointdlp
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ── Local tool settings ──
+.claude/settings.local.json
