@@ -49,3 +49,6 @@ __pycache__/
 
 # transient debug logs
 envs/fix_*.log
+
+# marimo app cache/layout
+__marimo__/
