@@ -13,6 +13,11 @@ REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 IDX="$REPO/reference/star_index_GRCh38_gencode_v32"
 WL="$REPO/reference/737K-august-2016.txt"      # 10x 5' v1/v2 whitelist
 THREADS="${THREADS:-32}"
+# DISK, not RAM, is the binding constraint here. During BAM sorting STAR holds, at
+# once: the Solo gene temps (~9GB), the unsorted alignments in __STARtmp (~BAM size),
+# and the final sorted BAM. Keep free disk >= ~2.5x the expected final BAM (e.g. a
+# 24GB BAM needs ~60GB transient). Running out there kills the run *after* mapping.
+SORT_RAM="${SORT_RAM:-40000000000}"
 mkdir -p "$OUT"
 
 # Chemistry: CB = R1[1..16], UMI = R1[17..26]. (Our R1 is 27bp; the extra base is
@@ -27,7 +32,7 @@ STAR --runMode alignReads \
   --soloCBwhitelist "$WL" \
   --soloCBstart 1 --soloCBlen 16 --soloUMIstart 17 --soloUMIlen 10 \
   --soloBarcodeReadLength 0 \
-  --soloStrand Forward \
+  --soloStrand Reverse \
   --soloFeatures Gene GeneFull \
   --outSAMtype BAM SortedByCoordinate \
   --outSAMattributes NH HI AS nM CB UB GX GN \
@@ -38,8 +43,22 @@ STAR --runMode alignReads \
   --soloUMIfiltering MultiGeneUMI_CR \
   --soloUMIdedup 1MM_CR \
   --soloCellFilter EmptyDrops_CR \
-  --limitBAMsortRAM 40000000000
+  --limitBAMsortRAM "$SORT_RAM"
 
-samtools index -@ "$THREADS" "$OUT/${PREFIX}Aligned.sortedByCoord.out.bam"
-echo "DONE -> $OUT/${PREFIX}Aligned.sortedByCoord.out.bam"
+BAM="$OUT/${PREFIX}Aligned.sortedByCoord.out.bam"
+# WSL2 intermittently corrupts large BAM writes (CRC32/BGZF block errors). quickcheck
+# does NOT catch this, and -- learned the hard way -- neither does `bgzip --test -@N`:
+# its threaded path returned exit 0 on a BAM that was already corrupt. What DOES catch
+# it is any full decode-every-block read. `samtools index` is exactly that (it must
+# decode the whole BAM to build the .bai) AND it's properly threaded, so we use it as
+# the integrity gate and the indexer in one pass. A CRC32 mismatch makes it exit
+# non-zero; never trust a BAM whose index build failed -- re-run instead.
+echo "indexing + full-decode integrity check..."
+if ! samtools index -@ "$THREADS" "$BAM"; then
+  echo "ERROR: index build failed -- BAM corrupt (likely WSL2 write corruption)." >&2
+  echo "       Re-run this script; the previous output is not trustworthy." >&2
+  rm -f "$BAM".bai
+  exit 1
+fi
+echo "DONE -> $BAM"
 echo "matrices -> $OUT/${PREFIX}Solo.out/"
