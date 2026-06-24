@@ -27,12 +27,18 @@ Run in the `clonemut` conda env.
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import sys
 from collections import Counter, defaultdict
 
-import pyarrow as pa
-import pyarrow.parquet as pq
+try:
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+    _HAVE_PYARROW = True
+except ImportError:                       # some cluster envs (e.g. SComatic) lack pyarrow
+    pa = pq = None
+    _HAVE_PYARROW = False
 
 # allow running as a plain script (no install): import the sibling module
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -40,19 +46,54 @@ from molecules import Filters, iter_sites, load_meta  # noqa: E402
 
 _ACGT = frozenset("ACGT")
 
+# Output column schemas, declared pyarrow-independently as (name, kind) so the CSV
+# writer works in envs without pyarrow. kind: str|int|float|intlist.
+GS_COLS = [("group_id", "str"), ("n_cells", "int"), ("n_callable_sites", "int"),
+           ("mean_cov", "float"), ("median_mol_per_cell_per_site", "float"),
+           ("mol_per_cell_hist", "intlist")]
+CAND_COLS = [("site_id", "str"), ("chrom", "str"), ("pos", "int"), ("ref", "str"),
+             ("alt", "str"), ("depth", "int"), ("n_molecules", "int"),
+             ("n_alt_molecules", "int"), ("n_cells", "int"), ("n_alt_cells", "int"),
+             ("vaf", "float")]
+SITE_COLS = [("site_id", "str"), ("chrom", "str"), ("pos", "int"), ("group_id", "str"),
+             ("depth", "int"), ("n_cells", "int"), ("n_molecules", "int")]
 
-def write_parquet(rows, path, schema):
-    """Write a list of row dicts to Parquet under an explicit schema.
 
-    The explicit schema keeps column types stable even when ``rows`` is empty
-    (e.g. a region with no candidates), so downstream readers never see a
-    schema-less file.
+def _pa_schema(cols):
+    t = {"str": pa.string(), "int": pa.int64(), "float": pa.float64(),
+         "intlist": pa.list_(pa.int64())}
+    return pa.schema([(name, t[kind]) for name, kind in cols])
+
+
+def write_table(rows, out_prefix_path, cols, fmt):
+    """Write row dicts to ``<out_prefix_path>.<ext>`` as parquet or csv; return the path.
+
+    An explicit column schema keeps types/columns stable even when ``rows`` is empty
+    (e.g. a region with no candidates), so downstream readers never see a schema-less
+    file. CSV is the fallback for envs without pyarrow; list columns (intlist) are
+    serialized as ``;``-joined values so the CSV stays flat (duckdb can split later).
     """
-    if rows:
-        table = pa.Table.from_pylist(rows, schema=schema)
-    else:
-        table = schema.empty_table()
-    pq.write_table(table, path)
+    if fmt == "parquet":
+        schema = _pa_schema(cols)
+        table = pa.Table.from_pylist(rows, schema=schema) if rows else schema.empty_table()
+        path = out_prefix_path + ".parquet"
+        pq.write_table(table, path)
+        return path
+
+    path = out_prefix_path + ".csv"
+    names = [n for n, _ in cols]
+    list_cols = {n for n, k in cols if k == "intlist"}
+    with open(path, "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=names)
+        w.writeheader()
+        for r in rows:
+            row = dict(r)
+            for c in list_cols:
+                v = row.get(c)
+                if isinstance(v, (list, tuple)):
+                    row[c] = ";".join(str(x) for x in v)
+            w.writerow(row)
+    return path
 
 
 class GroupAcc:
@@ -116,6 +157,8 @@ def main():
                     help="min alt molecules for a candidate (default 2)")
     ap.add_argument("--no-site-coverage", action="store_true",
                     help="skip the per-site x group coverage table (large genome-wide)")
+    ap.add_argument("--format", choices=["auto", "parquet", "csv"], default="auto",
+                    help="output format; auto = parquet if pyarrow available, else csv")
     # baked filters (SComatic-compatible defaults)
     ap.add_argument("--max-nh", type=int, default=1)
     ap.add_argument("--max-nm", type=int, default=5)
@@ -187,34 +230,27 @@ def main():
             median_mol_per_cell_per_site=median_from_hist(acc.mpc_hist),
             mol_per_cell_hist=hist))
 
-    gs_schema = pa.schema([
-        ("group_id", pa.string()), ("n_cells", pa.int64()),
-        ("n_callable_sites", pa.int64()), ("mean_cov", pa.float64()),
-        ("median_mol_per_cell_per_site", pa.float64()),
-        ("mol_per_cell_hist", pa.list_(pa.int64()))])
-    cand_schema = pa.schema([
-        ("site_id", pa.string()), ("chrom", pa.string()), ("pos", pa.int64()),
-        ("ref", pa.string()), ("alt", pa.string()), ("depth", pa.int64()),
-        ("n_molecules", pa.int64()), ("n_alt_molecules", pa.int64()),
-        ("n_cells", pa.int64()), ("n_alt_cells", pa.int64()), ("vaf", pa.float64())])
-    site_schema = pa.schema([
-        ("site_id", pa.string()), ("chrom", pa.string()), ("pos", pa.int64()),
-        ("group_id", pa.string()), ("depth", pa.int64()),
-        ("n_cells", pa.int64()), ("n_molecules", pa.int64())])
+    fmt = a.format
+    if fmt == "auto":
+        fmt = "parquet" if _HAVE_PYARROW else "csv"
+    elif fmt == "parquet" and not _HAVE_PYARROW:
+        sys.exit("ERROR: --format parquet but pyarrow is not installed "
+                 "(use --format csv, or install pyarrow)")
 
-    write_parquet(gs_rows, f"{a.out_prefix}.group_summary.parquet", gs_schema)
-    write_parquet(cand_rows, f"{a.out_prefix}.candidates.parquet", cand_schema)
+    gs_path = write_table(gs_rows, f"{a.out_prefix}.group_summary", GS_COLS, fmt)
+    cand_path = write_table(cand_rows, f"{a.out_prefix}.candidates", CAND_COLS, fmt)
+    site_path = None
     if not a.no_site_coverage:
-        write_parquet(site_rows, f"{a.out_prefix}.coverage_by_site.parquet", site_schema)
+        site_path = write_table(site_rows, f"{a.out_prefix}.coverage_by_site", SITE_COLS, fmt)
 
     # ---- legible report ----
     n_cand = len(cand_rows)
     sys.stderr.write(
-        f"sites_covered={n_sites}  groups={len(groups)}  candidates={n_cand}\n"
-        f"group_summary -> {a.out_prefix}.group_summary.parquet\n"
-        f"candidates    -> {a.out_prefix}.candidates.parquet\n")
-    if not a.no_site_coverage:
-        sys.stderr.write(f"coverage_by_site -> {a.out_prefix}.coverage_by_site.parquet\n")
+        f"sites_covered={n_sites}  groups={len(groups)}  candidates={n_cand}  format={fmt}\n"
+        f"group_summary -> {gs_path}\n"
+        f"candidates    -> {cand_path}\n")
+    if site_path:
+        sys.stderr.write(f"coverage_by_site -> {site_path}\n")
     # Gate-1 headline: do cells carry >=2 molecules at callable sites?
     if gs_rows:
         meds = [r["median_mol_per_cell_per_site"] for r in gs_rows]

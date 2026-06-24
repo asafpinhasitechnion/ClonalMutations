@@ -21,6 +21,8 @@ Data/**/paper/
 *.fasta.gz
 *.gtf
 *.gtf.gz
+# samtools faidx index (regenerable)
+*.fai
 reference/star_index_*/
 reference/737K-*.txt
 reference/737K-*.txt.gz
@@ -37,6 +39,9 @@ external/SComatic/bed_files_of_interest/
 
 # ── Extraction outputs (regenerable Parquet data layer) ──
 results/**/*.parquet
+
+# ── STARsolo output dir (BAM transferred separately; logs/SJ/matrices regenerable) ──
+results/**/star/
 
 # ── Python ──
 __pycache__/
